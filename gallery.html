@@ -6,95 +6,18 @@ id: gallery
 
 <div id="galleryContainer">
 	<div class="grid-sizer">
-			
+		{% for photoShoot in site.data.photoShoots %}
 			<div class="galleryCover item">
-				<a href="gallery/pages/hall14.html">
+				<a href="gallery/pages/{{photoShoot.path}}">
 					<div class="galleryContent">
-						<img src="img/hall14Cover.jpg">
+						<img src="gallery/img/{{photoShoot.path}}/{{photoShoot.cover}}">
 						<div class="galleryInfo">
-							<h2>Halloween 2014</h2>
-							<h3>November 2014</h3>
+							<h2>{{photoShoot.title}}</h2>
+							<h3>{{photoShoot.date}}</h3>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/summer.html">
-					<div class="galleryContent">
-						<img src="img/sprinklerCover.jpg">
-						<div class="galleryInfo">
-							<h2>Summer Time</h2>
-							<h3>August 2014</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/ballerina.html">
-					<div class="galleryContent">
-						<img src="img/ballerinaCover.jpg">
-						<div class="galleryInfo">
-							<h2>Prima</h2>
-							<h3>July 2014</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/pilot.html">
-					<div class="galleryContent">
-						<img src="img/pilotCover.jpg">
-						<div class="galleryInfo">
-							<h2>Pilot</h2>
-							<h3>June 2014</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/tea.html">
-					<div class="galleryContent">
-						<img src="img/teaCover.jpg">
-						<div class="galleryInfo">
-							<h2>Tea in the garden</h2>
-							<h3>June 2014</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/hall13.html">
-					<div class="galleryContent">
-						<img src="img/hall13Cover.jpg">
-						<div class="galleryInfo">
-							<h2>Halloween 2013</h2>
-							<h3>October 2013</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/pumpkin.html">
-					<div class="galleryContent">
-						<img src="img/pumpkinCover.jpg">
-						<div class="galleryInfo">
-							<h2>Pumpkin Pickin'</h2>
-							<h3>October 2013</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="galleryCover item">
-				<a href="gallery/pages/cole.html">
-					<div class="galleryContent">
-						<img src="img/coleCover.jpg">
-						<div class="galleryInfo">
-							<h2>M. Cole</h2>
-							<h3>June 2012</h3>
-						</div>
-					</div>
-				</a>
-			</div>
-	
+		{% endfor %}
 	</div> 
 </div>
