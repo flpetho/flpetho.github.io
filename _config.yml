@@ -2,4 +2,4 @@ page_gen:
   - data: 'photoShoots'
     template: 'gallery'
     name: 'path'
-    dir: 'people'
+    dir: 'gallery/pages'

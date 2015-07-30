@@ -8,11 +8,11 @@ id: gallery
 	<div class="grid-sizer">
 		{% for photoShoot in site.data.photoShoots %}
 			<div class="galleryCover item">
-				<a href="gallery/pages/{{photoShoot.path}}">
+				<a href="gallery/pages/{{photoShoot.path}}.html">
 					<div class="galleryContent">
-						<img src="gallery/img/{{photoShoot.path}}/{{photoShoot.cover}}">
+						<img src="gallery/covers/{{photoShoot.cover}}">
 						<div class="galleryInfo">
-							<h2>{{photoShoot.title}}</h2>
+							<h2>{{photoShoot.photoShoot}}</h2>
 							<h3>{{photoShoot.date}}</h3>
 						</div>
 					</div>

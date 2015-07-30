@@ -1,6 +1,50 @@
-[{
-  "title":"Halloween 2014",
-  "date":"November 2014",
-  "path":"hall14",
-  "cover":"hall14-6.jpg"
-}]
+[
+  {
+    "photoShoot":"Halloween 2014",
+    "date":"November 2014",
+    "path":"hall14",
+    "cover":"hall14Cover.jpg"
+  },
+  {
+    "photoShoot":"Summer Time",
+    "date":"August 2014",
+    "path":"summer",
+    "cover":"sprinklerCover.jpg"
+  },
+  {
+    "photoShoot":"Prima",
+    "date":"July 2014",
+    "path":"ballerina",
+    "cover":"ballerinaCover.jpg"
+  },
+  {
+    "photoShoot":"Pilot",
+    "date":"June 2014",
+    "path":"pilot",
+    "cover":"pilotCover.jpg"
+  },
+  {
+    "photoShoot":"Tea in the Garden",
+    "date":"June 2014",
+    "path":"tea",
+    "cover":"teaCover.jpg"
+  },
+  {
+    "photoShoot":"Halloween 2013",
+    "date":"October 2013",
+    "path":"hall13",
+    "cover":"hall13Cover.jpg"
+  },
+  {
+    "photoShoot":"Pumpkin Pickin'",
+    "date":"October 2013",
+    "path":"pumpkin",
+    "cover":"pumpkinCover.jpg"
+  },
+  {
+    "photoShoot":"M. Cole",
+    "date":"June 2012",
+    "path":"cole",
+    "cover":"coleCover.jpg"
+  }
+]

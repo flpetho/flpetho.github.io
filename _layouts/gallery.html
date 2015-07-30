@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Halloween 2013 Shoot</title>
+    <title>{{page.photoShoot}} Shoot</title>
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/fluidbox.css">
     <link rel="stylesheet" type="text/css" href="../../css/main-style.css">
@@ -22,21 +22,12 @@
         </nav>
       </header>
       <section id="gallery" class="content">
-        <h1>Halloween 2013</h1>
+        <h1>{{page.photoShoot}}</h1>
           <div id="galleryContainer">
             <div class="grid-sizer">
-              <div class="item"><a href="../img/hall13/hall13-1.jpg"><img src="../img/hall13/hall13-1.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-2.jpg"><img src="../img/hall13/hall13-2.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-3.jpg"><img src="../img/hall13/hall13-3.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-4.jpg"><img src="../img/hall13/hall13-4.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-5.jpg"><img src="../img/hall13/hall13-5.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-6.jpg"><img src="../img/hall13/hall13-6.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-7.jpg"><img src="../img/hall13/hall13-7.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-8.jpg"><img src="../img/hall13/hall13-8.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-9.jpg"><img src="../img/hall13/hall13-9.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-10.jpg"><img src="../img/hall13/hall13-10.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-11.jpg"><img src="../img/hall13/hall13-11.jpg"></a></div>
-              <div class="item"><a href="../img/hall13/hall13-12.jpg"><img src="../img/hall13/hall13-12.jpg"></a></div>
+              {% directory path: gallery/img/ %}
+                <div class="item"><a href="../img/{{ page.path }}/{{ file.name }}"><img src="../img/{{ page.path }}/{{ file.name }}"></a></div>
+              {% enddirectory %}
             </div>
           </div> <!-- End of the galleryCover photos -->
       </section>
@@ -48,7 +39,5 @@
       </p> 
     </footer>
     <script src="../../js/gallery-deps.js"></script>
-    
-
   </body>
 </html>
