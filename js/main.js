@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 	var randomNumber = Math.floor((Math.random() * 4) + 1);
-	console.log(randomNumber);
 	$('body.bg-image').css({'background' : 'url(img/hp/'+randomNumber+'.jpg)', 
 							'background-repeat' : 'no-repeat', 
 							'background-position' : 'center center', 
@@ -17,7 +16,6 @@ $(document).ready(function(){
 	  gutter: 5,
 	  transitionDuration: 0,
 	  isFitWidth: true,
-	
 	});
 
 
@@ -26,11 +24,9 @@ $(document).ready(function(){
 	// layout Masonry again after all images have loaded
 	var loaded = false;
 	var interval = setInterval(function() {
-		console.log('Setting Up Masonry');
 	  $container.masonry();
 		if (loaded) {
 			clearInterval(interval);
-			console.log('Finally Setting Up Masonry');
 		  $container.masonry();
 		}
 	}, 100);
@@ -44,15 +40,15 @@ $(document).ready(function(){
 
 
 $(window).load(function() {
-
 	$('footer').show();
-
 });
 
 
 $(function () {
-	   
-	$('.item a').fluidbox();
+	var els = $('.item a');
+	if (els.fluidbox) {
+		els.fluidbox();
+	}
 	
 });
 
