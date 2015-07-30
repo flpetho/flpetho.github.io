@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Rebecca/Laszlo</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  </head>
+  <body {% if page.id == "homepage" %} class="bg-image" {% endif %} >
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <nav>
+            <a href="index.html">
+              {% if page.id == "homepage" %}
+                <i class="fewd-logo fewd-logo-white"></i>
+              {% else %}
+                <i class="fewd-logo fewd-logo-black"></i>
+              {% endif %}
+            </a>
+            <ul>
+              <li><a href="gallery.html" {% if page.id == "homepage" %} class="hp" {% endif %}>Gallery</a></li>
+              <li class="res-padding"><a href="about.html" {% if page.id == "homepage" %} class="hp" {% endif %}>About</a></li>
+              <li><a href="contact.html" {% if page.id == "homepage" %} class="hp" {% endif %}>Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section id="{{ page.id }}" class="content">
+          {{ content }}
+        </section>
+      </div>
+    </div>
+    <footer class="site-footer">
+
+      <p class="hpf">
+        &copy;2014 Rebecca/Laszlo Photography. All rights reserved.
+      </p> 
+        
+    </footer>
+    
+    
+    <script src="js/deps.js"></script>
+    <!-- <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/imagesLoaded.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script> -->
+  </body>
+</html>
