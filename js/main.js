@@ -49,7 +49,6 @@ $(function () {
 	if (els.fluidbox) {
 		els.fluidbox();
 	}
-	
 });
 
 
