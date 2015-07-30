@@ -24,8 +24,18 @@ $(document).ready(function(){
 
 	var $container = $('#galleryContainer').masonry();
 	// layout Masonry again after all images have loaded
-	$container.imagesLoaded( function() {
+	var loaded = false;
+	var interval = setInterval(function() {
+		console.log('Setting Up Masonry');
 	  $container.masonry();
+		if (loaded) {
+			clearInterval(interval);
+			console.log('Finally Setting Up Masonry');
+		  $container.masonry();
+		}
+	}, 100);
+	$container.imagesLoaded( function() {
+	  loaded = true;
 	});
 
 
